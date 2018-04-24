@@ -1,0 +1,14 @@
+
+graph gg {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: gg"
+	"1000011516594201239" [label="2", shape=box, style=filled, fillcolor=white];
+	"1000011517208581936" [label="3", shape=box, style=filled, fillcolor=white];
+}

@@ -1,0 +1,14 @@
+
+graph A_G6_5 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: A G6/5"
+	"1000011517208105370" [label="81", shape=box, style=filled, fillcolor=white];
+	"1000011517220436569" [label="83", shape=box, style=filled, fillcolor=white];
+}

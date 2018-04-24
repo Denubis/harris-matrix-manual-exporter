@@ -1,0 +1,42 @@
+DROP VIEW IF EXISTS parentchild;
+No data.
+
+CREATE VIEW parentchild AS SELECT parent.uuid as parentuuid, child.uuid as childuuid, parent.participatesverb as parentparticipatesverb, parent.relationshipid, parent.aenttypename as parentaenttypename, child.participatesverb as childparticipatesverb, child.aenttypename as childaenttypename, createdat FROM (SELECT uuid, participatesverb, aenttypename, relationshipid, relntimestamp as createdat FROM latestnondeletedaentreln JOIN relationship USING (relationshipid) JOIN latestnondeletedarchent USING (uuid) JOIN aenttype USING (aenttypeid)) parent JOIN (SELECT uuid, relationshipid, participatesverb, aenttypename FROM latestnondeletedaentreln JOIN relationship USING (relationshipid) JOIN latestnondeletedarchent USING (uuid) JOIN aenttype USING (aenttypeid)) child ON (parent.relationshipid = child.relationshipid AND parent.uuid != child.uuid);
+No data.
+
+select response from latestNonDeletedArchEntFormattedIdentifiers where aenttypename = 'Square' and uuid = 1000011516060054606 ;
+RESPONSE   
+-----------
+aaa bbb {3}
+
+select childuuid, response from parentchild join latestNonDeletedArchEntFormattedIdentifiers on (childuuid = uuid) where parentparticipatesverb = 'Parent Of' and parentaenttypename = 'Square' and childaenttypename = 'Locus' and parentuuid = 1000011516060054606;
+CHILDUUID           | RESPONSE         
+--------------------|------------------
+1000011516060272303 | aaa bbb 3 1      
+1000031517981567187 | aaa bbb 3 4      
+1000031517981642067 | aaa bbb 3 5      
+1000031517981665714 | aaa bbb 3 6 {Pit}
+1000031517981991896 | aaa bbb 3 7 {Pit}
+
+select p.response as p, c.response as c from parentchild join latestNonDeletedArchEntFormattedIdentifiers as c on (childuuid = c.uuid) join latestNonDeletedArchEntFormattedIdentifiers as p on (parentuuid = p.uuid) where parentparticipatesverb = 'Above' and childparticipatesverb = 'Below' and parentuuid in ( select childuuid from parentchild where parentparticipatesverb = 'Parent Of' and parentaenttypename = 'Square' and childaenttypename = 'Locus' and parentuuid = 1000011516060054606 );
+P            | C           
+-------------|-------------
+aaa bbb 3 1  | aaa bbb 3 4 
+aaa bbb 3 4  | aaa bbb 3 5 
+
+select p.response as p, c.response as c from parentchild join latestNonDeletedArchEntFormattedIdentifiers as c on (childuuid = c.uuid) join latestNonDeletedArchEntFormattedIdentifiers as p on (parentuuid = p.uuid) where parentparticipatesverb = 'Same as' and childparticipatesverb = 'Same as' and parentuuid in ( select childuuid from parentchild where parentparticipatesverb = 'Parent Of' and parentaenttypename = 'Square' and childaenttypename = 'Locus' and parentuuid = 1000011516060054606 );
+P                 | C                
+------------------|------------------
+aaa bbb 3 6 {Pit} | aaa bbb 3 4      
+aaa bbb 3 4       | aaa bbb 3 6 {Pit}
+aaa bbb 3 7 {Pit} | bb L15           
+
+select p.response as p, c.response as c from parentchild join latestNonDeletedArchEntFormattedIdentifiers as c on (childuuid = c.uuid) join latestNonDeletedArchEntFormattedIdentifiers as p on (parentuuid = p.uuid) where parentparticipatesverb = '{includes}' and parentuuid in ( select childuuid from parentchild where parentparticipatesverb = 'Parent Of' and parentaenttypename = 'Square' and childaenttypename = 'Phase' and parentuuid = 1000011516060054606 );
+P     | C                
+------|------------------
+bbb-1 | aaa bbb 3 1      
+bbb-2 | aaa bbb 3 4      
+bbb-2 | aaa bbb 3 6 {Pit}
+bbb-2 | aaa bbb 3 7 {Pit}
+bbb-3 | aaa bbb 3 7 {Pit}
+

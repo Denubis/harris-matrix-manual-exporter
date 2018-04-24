@@ -1,0 +1,193 @@
+
+graph A_I5 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	
+	ranksep=1;
+	label="Khirbet el-Rei Square: A I5"
+	"1000011517207626478" -- "1000041517377162998" [color="black"];
+	"1000011517207626478" -- "1000041517376516907" [color="black"];
+	"1000011517207626478" -- "1000041517377001903" [color="black"];
+	"1000041517376516907" -- "1000051517474974760" [color="black"];
+	"1000041517806796418" -- "1000051518080576759" [color="black"];
+	"1000041518641626728" -- "1000041518639228562" [color="black"];
+	"1000051517474974760" -- "1000041517806796418" [color="black"];
+	"1000051518088241032" -- "1000111518593859392" [color="black"];
+	"1000051518088241032" -- "1000041518639228562" [color="black"];
+	"1000111518590897596" -- "1000111518591334056" [color="black"];
+	"1000111518591575598" -- "1000111518592092919" [color="black"];
+	"1000111518592965059" -- "1000041518643121818" [color="black"];
+	subgraph sameas1000051518080576759_1000051518088241032 {
+		rank=same;
+		"1000051518080576759" -- "1000051518088241032" [color="black:invis:black"];
+	}	subgraph sameas1000051518088241032_1000111518590897596 {
+		rank=same;
+		"1000051518088241032" -- "1000111518590897596" [color="black:invis:black"];
+	}
+	subgraph cluster_I51 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="1";
+		"1000011517207626478";
+	}
+
+	subgraph cluster_I52 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="2";
+		"1000041517377162998";
+		"1000041517376516907";
+		"1000041517377001903";
+	}
+
+	subgraph cluster_I53 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="3";
+		"1000051517474974760";
+	}
+
+	subgraph cluster_I54 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="4";
+		"1000041517806796418";
+	}
+
+	subgraph cluster_I55 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="5";
+		"1000051518080576759";
+		"1000051518088241032";
+		"1000041518641626728";
+		"1000111518593859392";
+		"1000111518590897596";
+	}
+
+	subgraph cluster_I56 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="6";
+		"1000111518591334056";
+		"1000111518592092919";
+	}
+
+	subgraph cluster_I57 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="7";
+		"1000051518088056178";
+		"1000111518592341345";
+	}
+
+	subgraph cluster_I58 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="8";
+		"1000041518639228562";
+	}
+
+	subgraph cluster_I59 {
+		style=filled;
+
+		color="#bbbbbb";
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="9";
+		"1000041518640001491";
+		"1000111518590520460";
+	}
+	"1000011517207626478" [label="77", shape=box, style=filled, fillcolor=white];
+	"1000041517377162998" [label="89", shape=trapezium, style=filled, fillcolor=white];
+	"1000041517376516907" [label="90", shape=box, style=filled, fillcolor=white];
+	"1000041517377001903" [label="91", shape=box, style=filled, fillcolor=white];
+	"1000051517474974760" [label="96", shape=box, style=filled, fillcolor=white];
+	"1000041517806796418" [label="102", shape=box, style=filled, fillcolor=white];
+	"1000041518640001491" [label="125", shape=trapezium, style=filled, fillcolor=white];
+	"1000051518080576759" [label="126", shape=box, style=filled, fillcolor=white];
+	"1000051518088056178" [label="131", shape=trapezium, style=filled, fillcolor=white];
+	"1000041518641626728" [label="132", shape=oval, style=filled, fillcolor=white];
+	"1000051518088241032" [label="133", shape=box, style=filled, fillcolor=white];
+	"1000111518590520460" [label="134", shape=trapezium, style=filled, fillcolor=white];
+	"1000111518592965059" [label="138", shape=box, style=filled, fillcolor=white];
+	"1000111518592341345" [label="141", shape=trapezium, style=filled, fillcolor=white];
+	"1000041518643121818" [label="146", shape=oval, style=filled, fillcolor=white];
+	"1000111518591575598" [label="147", shape=box, style=filled, fillcolor=white];
+	"1000111518590897596" [label="148", shape=box, style=filled, fillcolor=white];
+	"1000111518593859392" [label="150", shape=trapezium, style=filled, fillcolor=white];
+	"1000111518592092919" [label="151", shape=trapezium, style=filled, fillcolor=white];
+	"1000111518591334056" [label="153", shape=trapezium, style=filled, fillcolor=white];
+	"1000041518639228562" [label="154", shape=oval, style=filled, fillcolor=white];
+subgraph cluster_legend{
+			label="Legend"
+			"normal" [shape=box, label="Collapse, Debris, Fill, or Other"]
+			"trap" [shape=trapezium, label="Pit, Installation, or Wall"]
+			"oval" [shape=oval, label="Surface"]
+			"normal"--"trap"[color="white"]
+			"trap"--"oval"[color="white"]
+			}}

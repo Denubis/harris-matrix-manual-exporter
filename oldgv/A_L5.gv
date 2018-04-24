@@ -1,0 +1,15 @@
+
+graph A_L5 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: A L5"
+	"1000051518072986882" [label="79", shape=box, style=filled, fillcolor=white];
+	"1000051518086730967" [label="92", shape=box, style=filled, fillcolor=white];
+	"1000051518087114225" [label="95", shape=box, style=filled, fillcolor=white];
+}

@@ -1,0 +1,70 @@
+
+graph aaa_bbb__3_ {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: aaa bbb {3}"
+	"1000011516060272303" [label="1", shape=box, style=filled, fillcolor=white];
+	"1000031517981567187" [label="4", shape=box, style=filled, fillcolor=white];
+	"1000031517981642067" [label="5", shape=box, style=filled, fillcolor=white];
+	"1000031517981665714" [label="6", shape=box, style=filled, fillcolor=white];
+	"1000031517981991896" [label="7", shape=box, style=filled, fillcolor=white];
+	"1000031517982001054" [label="15", shape=box, style=filled, fillcolor=white];
+	subgraph sameas1000031517982001054_1000031517981991896 {
+		rank=same;
+		"1000031517982001054" -- "1000031517981991896" [color="black:invis:black"];
+	}	"1000011516060272303" -- "1000031517981567187" [color="black"];
+	subgraph sameas1000031517981665714_1000031517981567187 {
+		rank=same;
+		"1000031517981665714" -- "1000031517981567187" [color="black:invis:black"];
+	}	"1000031517981567187" -- "1000031517981642067" [color="black"];
+
+	subgraph cluster_bbb2 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="2";
+		"1000031517981567187";
+		"1000031517981665714";
+		"1000031517981991896";
+	}
+
+	subgraph cluster_bbb1 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="1";
+		"1000011516060272303";
+	}
+
+	subgraph cluster_bbb3 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="3";
+		"1000031517981991896";
+	}
+}

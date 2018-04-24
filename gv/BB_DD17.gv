@@ -1,0 +1,19 @@
+
+graph BB_DD17 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	
+	ranksep=1;
+	label="Khirbet el-Rei Square: BB DD17"
+subgraph cluster_legend{
+			label="Legend"
+			"normal" [shape=box, label="Collapse, Debris, Fill, or Other"]
+			"trap" [shape=trapezium, label="Pit, Installation, or Wall"]
+			"oval" [shape=oval, label="Surface"]
+			"normal"--"trap"[color="white"]
+			"trap"--"oval"[color="white"]
+			}}

@@ -1,0 +1,20 @@
+
+graph A_I6 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: A I6"
+	"1000041517461453838" [label="94", shape=box, style=filled, fillcolor=white];
+	"1000041517853446538" [label="104", shape=box, style=filled, fillcolor=white];
+	"1000051517906207784" [label="110", shape=box, style=filled, fillcolor=white];
+	"1000051517906388019" [label="111", shape=box, style=filled, fillcolor=white];
+	"1000051517995020099" [label="114", shape=box, style=filled, fillcolor=white];
+	"1000071517744328480" [label="99", shape=box, style=filled, fillcolor=white];
+	"1000071517744423524" [label="100", shape=box, style=filled, fillcolor=white];
+	"1000071517815017192" [label="103", shape=box, style=filled, fillcolor=white];
+}

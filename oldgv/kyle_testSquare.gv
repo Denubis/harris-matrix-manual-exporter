@@ -1,0 +1,118 @@
+
+graph kyle_testSquare {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: kyle testSquare"
+	"1000011518000922817" [label="12", shape=box, style=filled, fillcolor=white];
+	"1000011518000934234" [label="8", shape=box, style=filled, fillcolor=white];
+	"1000011518000995133" [label="5", shape=box, style=filled, fillcolor=white];
+	"1000011518001001472" [label="6", shape=box, style=filled, fillcolor=white];
+	"1000011518001008479" [label="7", shape=box, style=filled, fillcolor=white];
+	"1000011518001013438" [label="4", shape=box, style=filled, fillcolor=white];
+	"1000011518001019232" [label="3", shape=box, style=filled, fillcolor=white];
+	"1000011518001024252" [label="2", shape=box, style=filled, fillcolor=white];
+	"1000011518001034611" [label="11", shape=box, style=filled, fillcolor=white];
+	"1000011518001039951" [label="10", shape=box, style=filled, fillcolor=white];
+	"1000011518001046600" [label="9", shape=box, style=filled, fillcolor=white];
+	"1000011518001058211" [label="1", shape=box, style=filled, fillcolor=white];
+	"1000011518000922817" -- "1000011518000934234" [color="black"];
+	"1000011518000922817" -- "1000011518000995133" [color="black"];
+	"1000011518000995133" -- "1000011518001001472" [color="black"];
+	subgraph sameas1000011518001008479_1000011518001001472 {
+		rank=same;
+		"1000011518001008479" -- "1000011518001001472" [color="black:invis:black"];
+	}	"1000011518000995133" -- "1000011518001008479" [color="black"];
+	"1000011518001001472" -- "1000011518001013438" [color="black"];
+	"1000011518001013438" -- "1000011518001019232" [color="black"];
+	"1000011518000922817" -- "1000011518001024252" [color="black"];
+	"1000011518001019232" -- "1000011518001024252" [color="black"];
+	"1000011518001024252" -- "1000011518001034611" [color="black"];
+	"1000011518001034611" -- "1000011518001039951" [color="black"];
+	"1000011518001039951" -- "1000011518001046600" [color="black"];
+	"1000011518000995133" -- "1000011518001058211" [color="black"];
+	"1000011518001019232" -- "1000011518001058211" [color="black"];
+	"1000011518001046600" -- "1000011518001058211" [color="black"];
+
+	subgraph cluster_testSquarePhase5 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="Phase 5";
+		"1000011518000922817";
+		"1000011518000934234";
+		"1000011518000995133";
+	}
+
+	subgraph cluster_testSquarePhase4 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="Phase 4";
+		"1000011518001001472";
+		"1000011518001008479";
+	}
+
+	subgraph cluster_testSquarePhase3 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="Phase 3";
+		"1000011518001013438";
+		"1000011518001019232";
+		"1000011518001024252";
+	}
+
+	subgraph cluster_testSquarePhase2 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="Phase 2";
+		"1000011518001034611";
+		"1000011518001039951";
+		"1000011518001046600";
+	}
+
+	subgraph cluster_testSquarePhase1 {
+		style=filled;
+		bgcolor=lightgrey;
+		color=lightgrey;
+		shape="rect"; 
+		labeljust="l";
+		textcolor=blue;
+		concatenate=true;
+		packMode="clust";
+		outputMode=nodesfirst;
+		label="Phase 1";
+		"1000011518001058211";
+	}
+}

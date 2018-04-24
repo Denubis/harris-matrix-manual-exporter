@@ -1,0 +1,18 @@
+
+graph A_I5 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: A I5"
+	"1000041517806796418" [label="102", shape=box, style=filled, fillcolor=white];
+	"1000051517474974760" [label="96", shape=box, style=filled, fillcolor=white];
+	"1000051517983998546" [label="113", shape=box, style=filled, fillcolor=white];
+	"1000051518080576759" [label="126", shape=box, style=filled, fillcolor=white];
+	"1000051518088056178" [label="131", shape=box, style=filled, fillcolor=white];
+	"1000051518088241032" [label="133", shape=box, style=filled, fillcolor=white];
+}

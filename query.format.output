@@ -1,0 +1,11 @@
+select * from latestNonDeletedArchEntFormattedIdentifiers;
+UUID                | AENTTYPEID   | AENTTYPENAME | RESPONSE | DELETED
+--------------------|--------------|--------------|----------|--------
+1000011516671044635 | 171326764415 | Survey Unit  | 1        |        
+1000011516671057724 | 171326808637 | Walker Unit  | 11       |        
+1000011516671059464 | 171326808637 | Walker Unit  | 12       |        
+1000011516671061309 | 171326808637 | Walker Unit  | 13       |        
+1000011516671064533 | 171326764415 | Survey Unit  | 2        |        
+1000011516671066965 | 171326808637 | Walker Unit  | 11       |        
+1000011516671073786 | 171326808637 | Walker Unit  | 12       |        
+

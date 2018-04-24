@@ -1,0 +1,17 @@
+
+graph B_cc17 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: B cc17"
+	"1000061517219494098" [label="B391", shape=box, style=filled, fillcolor=white];
+	"1000061517220016084" [label="B392", shape=box, style=filled, fillcolor=white];
+	subgraph sameas1000061517220016084_1000061517219494098 {
+		rank=same;
+		"1000061517220016084" -- "1000061517219494098" [color="black:invis:black"];
+	}}

@@ -1,0 +1,14 @@
+
+graph B_dd16 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: B dd16"
+	"1000031518086093033" [label="B396", shape=box, style=filled, fillcolor=white];
+	"1000081517684770809" [label="b391", shape=box, style=filled, fillcolor=white];
+}

@@ -1,0 +1,17 @@
+
+graph A_G_H_6 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: A G-H 6"
+	"1000011517208300415" [label="82", shape=box, style=filled, fillcolor=white];
+	"1000011517237964535" [label="85", shape=box, style=filled, fillcolor=white];
+	"1000011517238662785" [label="86", shape=box, style=filled, fillcolor=white];
+	"1000041517302939034" [label="88", shape=box, style=filled, fillcolor=white];
+	"1000071517238855254" [label="84", shape=box, style=filled, fillcolor=white];
+}

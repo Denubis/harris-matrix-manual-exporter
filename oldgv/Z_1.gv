@@ -1,0 +1,14 @@
+
+graph Z_1 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: Z 1"
+	"1000011516076462609" [label="1", shape=box, style=filled, fillcolor=white];
+	"1000031512693973605" [label="1", shape=box, style=filled, fillcolor=white];
+}

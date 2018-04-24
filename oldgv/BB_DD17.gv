@@ -1,0 +1,28 @@
+
+graph BB_DD17 {
+	splines=ortho;
+	overlap=false;
+	newrank=true;
+	labelloc=top;
+	labeljust="l";
+	
+	page=8;
+	ranksep=0.75;
+	label="Khirbet el-Rei Square: BB DD17"
+	"1000111518066846474" [label="392", shape=box, style=filled, fillcolor=white];
+	"1000111518067314449" [label="393", shape=box, style=filled, fillcolor=white];
+	"1000111518067931149" [label="395", shape=box, style=filled, fillcolor=white];
+	"1000111518068307611" [label="398", shape=box, style=filled, fillcolor=white];
+	"1000111518068454251" [label="399", shape=box, style=filled, fillcolor=white];
+	"1000111518068956495" [label="403", shape=box, style=filled, fillcolor=white];
+	"1000111518069374969" [label="404", shape=box, style=filled, fillcolor=white];
+	"1000111518069533273" [label="389", shape=box, style=filled, fillcolor=white];
+	"1000111518071112166" [label="372", shape=box, style=filled, fillcolor=white];
+	"1000111518071404040" [label="412", shape=box, style=filled, fillcolor=white];
+	"1000111518072227602" [label="415", shape=box, style=filled, fillcolor=white];
+	"1000111518072628757" [label="418", shape=box, style=filled, fillcolor=white];
+	"1000111518078182195" [label="416", shape=box, style=filled, fillcolor=white];
+	"1000111518080152275" [label="419", shape=box, style=filled, fillcolor=white];
+	"1000111518081221998" [label="424", shape=box, style=filled, fillcolor=white];
+	"1000111518082651565" [label="380", shape=box, style=filled, fillcolor=white];
+}

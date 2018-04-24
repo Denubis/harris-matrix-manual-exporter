@@ -1,0 +1,76 @@
+graph textMatrix {
+		splines=ortho;
+		//BBS: Figure out how to fix;
+		newrank=true;
+
+		subgraph cluster_ph5 {
+	
+			shape="rect";
+			label="Phase 5";
+			12;
+			8;
+			5;
+
+		}
+
+		subgraph cluster_ph4 {
+			rank="same";
+			label = "Phase 4";
+			6;
+			7;
+			7:e -- 6:w [color="black:invis:black"];
+			labeljust="1";
+		}
+
+		subgraph cluster_ph3 {
+			label = "Phase 3";
+			4;
+			3;
+			2;
+		}
+		subgraph cluster_ph2{
+			label = "Phase 2";
+			11;
+			10;
+			9;
+		}
+		subgraph cluster_ph1{
+			1;
+			label = "Phase 1";
+		}
+		12:s -- 5:n;
+
+		5:s -- 6:n
+
+		6:s -- 4:n;
+		4:s -- 3:n;
+		3:s -- 2:n;
+		2:s -- 11:n;
+		11:s -- 10:n;
+		10:s -- 9:n;
+		9:s -- 1:n ;
+		12:s -- 8:n;
+		12:s -- 2:n;
+		5:s -- 7:n;
+		7:s	-- 1:n;
+		5:s	-- 1:n;
+		3:s	-- 1:n;
+
+
+
+		node [sides=4, shape=box, color=red, style=filled];
+
+		1  [fillcolor=blue, shape=box, style=filled];	
+		2  [fillcolor=blue, shape=box];	
+		3  [fillcolor=blue, shape=box];	
+		4  [fillcolor=blue, shape=box];	
+		5  [fillcolor=blue, shape=box];	
+		6  [fillcolor=blue, shape=box];	
+		7  [fillcolor=blue, shape=box];	
+		8  [fillcolor=blue, shape=box];	
+		9  [fillcolor=blue, shape=box];	
+		10 [fillcolor=blue, shape=box];	
+		11 [fillcolor=blue, shape=box];	
+		12 [fillcolor=blue, shape=box];	
+}
+
